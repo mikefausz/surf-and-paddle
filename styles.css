@@ -1,0 +1,380 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto sans',sans-serif;
+}
+
+a {
+  color: #a3b3bf;
+}
+
+p {
+  line-height: 24px;
+}
+
+header {
+  height: 525px;
+  width: 100%;
+  margin-bottom: 5%;
+  background-image: url(https://wizardofspa.files.wordpress.com/2013/04/awesomely-ocean-waves.jpg);
+}
+
+.overlay {
+  z-index: 1;
+  background: rgba(16,109,179,0.8);
+  height: 525px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+nav {
+  color: #000;
+  height: 10%;
+  font-size: 18px;
+  padding-top: 16px;
+  width: 82%;
+  margin-left: 9%;
+  text-align: right;
+}
+
+nav #logo {
+  vertical-align: middle;
+  height: 100%;
+  display: inline;
+  float: left;
+}
+
+#wavelogo {
+  height: 45px;
+  width: 45px;
+  margin-right: 12px;
+  border-radius: 100%;
+  background-color: #000;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav ul {
+  vertical-align: middle;
+  height: 100%;
+  margin: 0;
+  display: inline-block;
+  font-family: 'Oswald',sans-serif;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 12px;
+  transition: all .2s ease-in-out;
+}
+
+nav li:hover {
+  transform: scale(1.1);
+  padding: 10px;
+}
+
+#searchbar img {
+  margin-left: -6px;
+  padding-left: 0;
+  height: 16px;
+}
+
+#title {
+  position: relative;
+  top: 24%;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  font-size: 100px;
+  color: #FFF;
+  opacity: 1;
+  text-align: center;
+}
+
+#subtitle {
+  position: relative;
+  top: 21%;
+  left: -8px;
+  width: 100%;
+  margin: auto;
+  font-size: 15px;
+  color: #000;
+  opacity: 1;
+  text-align: center;
+}
+
+.maincontent {
+  width: 50%;
+  padding-left: 10%;
+  padding-bottom: 5%;
+  display: inline-block;
+}
+
+.maincontent h1 {
+  line-height: 72px;
+  font-family: 'Oswald',sans-serif;
+  font-size: 66px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.author {
+  display: inline-block;
+  width: 20%;
+}
+
+div.photoicon {
+  display: inline-block;
+}
+
+.photoicon img {
+  background-color: #106db3;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.date {
+  display: inline-block;
+  color: #a3b3bf;
+  font-size: 14px;
+}
+
+.maincontent h3 {
+  color: #106db3;
+  padding: 4px;
+  margin: 0 0 10px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.maincontent h2 {
+  transition: all .2s ease-in-out;
+  color: #106db3;
+  border-left: #a3b3bf solid 2px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 25px;
+}
+
+.maincontent h2:hover {
+  transform: scale(1.1);
+}
+
+.buttonbar {
+  display: block;
+}
+
+.buttonbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.button {
+  height: 10px;
+  padding: 5px 15px;
+  display: inline;
+  margin-right: 5px;
+}
+
+#bgrey {
+  background-color: #a3b3bf;
+  border-left: #5e686f 30px solid;
+}
+
+#bgrey:hover {
+  background: #5e686f;
+}
+
+#bblue {
+  background-color: #106db3;
+  border-left: #083452 30px solid;
+}
+
+#bblue:hover {
+  background: #083452;
+}
+
+.sidebar {
+  vertical-align: top;
+  display: inline-block;
+  width: 22%;
+  margin-left: 5%;
+}
+
+div.sidecircle {
+  text-align: center;
+}
+
+.sidecircle img {
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+}
+
+.sidecircle img:hover {
+  opacity: .5;
+}
+
+.sidebar h1 {
+  color: #106db3;
+  font-size: 18px;
+  font-family: 'Noto sans',sans-serif;
+  margin: auto;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto sans',sans-serif;
+  color: #a3b3bf;
+  font-size: 14px;
+}
+
+div.sidephoto {
+  height: 300px;
+  width: 100%;
+  background-color: rgba(16,109,179,1);
+}
+
+.sidephoto {
+  margin-top: 50px;
+  height: 300px;
+  overflow: hidden;
+
+}
+.sidephoto img {
+    opacity: .5;
+}
+.sidephoto img:hover {
+  opacity: 1;
+}
+
+.sidebar h4 {
+  text-align: right;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.sidebar h3 {
+  color: #106db3;
+  font-family: 'Oswald',sans-serif;
+  margin-bottom: 8px;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.sidebar p {
+  margin: 0;
+  color: #a3b3bf;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.popular {
+  display: block;
+  text-align: center;
+  height: 140px;
+  border-top: 1px solid #a3b3bf;
+}
+
+.popular h1 {
+  transition: all .2s ease-in-out;
+  line-height: 32px;
+  font-family: 'Oswald',sans-serif;
+  font-size: 66px;
+}
+
+.popular h1:hover {
+  transform: scale(1.1);
+}
+
+.photogrid {
+  background-color: rgba(16,109,179,1);
+  height: 300px;
+  width: 100%;
+}
+
+.photogrid ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.photogrid li {
+  display: inline-block;
+  width: 24.9%;
+  position: relative;
+}
+
+.postphoto img {
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
+  opacity: .5;
+}
+
+.postphoto img:hover {
+  opacity: 1;
+}
+
+.postphoto h5 {
+  font-size: 27px;
+  font-family: 'Oswald',sans-serif;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 63%;
+  padding: 10px;
+  width: 300px;
+}
+
+footer {
+  color: #a3b3bf;
+  font-size: 14px;
+  background-color: #083452;
+  width: 100%;
+  height: 90px;
+  padding-top: 20px;
+}
+
+.TIY {
+  width: 47%;
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.TIY img {
+  height: 67px;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+div.footnav {
+  display: inline-block;
+}
+
+.footnav ul {
+  display: inline-block;
+}
+
+.footnav li {
+  display: inline-block;
+}
+
+.footnav li:nth-child(n+2):before {
+  content: "| ";
+}
+
+.footnav a {
+  text-decoration: none;
+}
