@@ -1,0 +1,45 @@
+// VARIABLES
+$blue: #146FB3;
+$navy: #04314F;
+$grey: #D3D3D3;
+$darkgrey: #5E696F;
+$oswald: 'Oswald',sans-serif;
+
+// MIXINS
+@mixin circle($size) {
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+}
+
+// GLOBAL STYLES
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto sans',sans-serif;
+}
+
+a {
+  color: $grey;
+}
+
+p {
+  line-height: 24px;
+}
+
+.content {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+// PARTIAL IMPORTS
+@import "header";
+@import "maincontent";
+@import "sidebar";
+@import "popposts";
+@import "footer";
+@import "tablet";
+@import "mobile";

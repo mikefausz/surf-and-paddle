@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Surf & Paddle Co.</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel='stylesheet' media='screen and (min-width: 400px) and (max-width: 900px)' href='mobile.css' />
+    <link rel="stylesheet" href="./css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <!--<div>Icons made by <a href="http://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>-->
@@ -13,15 +12,15 @@
     <header>
       <div class="overlay">
         <nav>
-          <div id="logo"><div id="wavelogo"></div>SURF & PADDLE CO. BLOG</div>
-
+          <div id="logo"><div id="wavelogo"><img src="images/wave-icon.png" alt="" /></div>SURF & PADDLE CO. BLOG</div>
           <ul id="searchbar">
-            <li>ABOUT</li> <li>SEARCH</li><li><img src="images/zoom3.png" alt="Search Icon" /></li></ul>
+            <li>ABOUT</li> <li>SEARCH</li><li><img src="images/search-icon.png" alt="Search Icon" /></li></ul>
         </nav>
         <div id="title">SURF & PADDLE CO.</div>
         <div id="subtitle">An Iron Yard Academy Project Est Fall 2013</div>
       </div>
     </header>
+  <section class="content">
     <section class="maincontent">
       <h1>A FANTASTIC ENGAGING HEADLINE GOES HERE</h1>
       <div class="author">
@@ -45,50 +44,75 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
       </p>
       <div class="buttonbar">
-        <a href="#"><div class="button" id="bgrey">Read Comments</div></a>
-        <a href="#"><div class="button" id="bgrey">Read Later</div></a>
-        <a href="#"><div class="button" id="bblue">Share This Post</div></a>
+        <a href="#"><img src="images/comments-icon.png" alt="Read Comments Icon" /><div class="button" id="bgrey">Read Comments</div></a>
+        <a href="#"><img src="images/later-icon.png" alt="Read Later Icon" /><div class="button" id="bgrey">Read Later</div></a>
+        <a href="#"><img src="images/share-icon.png" alt="Share This Post Icon" /><div class="button" id="bblue">Share This Post</div></a>
       </div>
     </section>
     <aside class="sidebar">
-      <div class="sidecircle"><img src="http://fillmurray.com/100/100" alt="Bill Thumbnail" /></div>
+      <div class="sidecircle">
+        <img src="http://fillmurray.com/100/100" alt="Bill Thumbnail" />
+      </div>
       <h1>ANNE MARIE</h1>
       <h2>Twitter Facebook Instagram</h2>
+      <!--<div class="sidephoto">
+        <div class="bluetint"><img src="http://fillmurray.com/300/300" alt="" /></div>
+      </div>-->
+      <section class="ad">
       <div class="sidephoto">
         <img src="http://fillmurray.com/300/300" alt="" />
-        </div>
       </div>
       <a href="#"><h4>About This Ad</h4></a>
+      </section>
+      <section class="side-text">
       <h3>SIDEBAR SECTION HEADING</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <a href="#">exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
       </p>
+      </section>
     </aside>
-    <section class="popular">
-      <h1>MOST POPULAR POSTS</h1>
-    </section>
-    <section class="photogrid">
-      <ul>
-        <li class="postphoto">
+  </section>
+  <section class="popular">
+    <h1>MOST POPULAR POSTS</h1>
+  </section>
+  <section class="photogrid">
+      <div class="photo-row">
+        <div class="postphoto"><div class="blue-tint">
+
+
+        </div><h5>ANOTHER COOL POST</h5></div>
+        <div class="postphoto"><div class="blue-tint">
+
+        </div><h5>POST TITLE</h5></div>
+      </div>
+      <div class="photo-row">
+        <div class="postphoto"><div class="blue-tint">
+
+        </div><h5>HERE'S ANOTHER LONGER POST TITLE</h5></div>
+        <div class="postphoto"><div class="blue-tint">
+
+        </div><h5>OH COOL A POST!</h5></div>
+        <!-- <div class="postphoto">
             <img src="http://fillmurray.com/350/300" alt="Bill Murray" />
             <h5>ANOTHER COOL POST</h5>
-        </li>
-        <li class="postphoto">
+        </div> -->
+        <!-- <div class="postphoto">
             <img src="http://fillmurray.com/350/300" alt="Bill Murray" />
             <h5>POST TITLE</h5>
-        </li><li class="postphoto">
+        </div>
+      </div>
+      <div class="photo-row">
+        <div class="postphoto">
             <img src="http://fillmurray.com/350/300" alt="Bill Murray" />
-            <h5>HERE'S ANOTHER LONGER POST TITLE</h5>
-        </li><li class="postphoto">
+            <h5>HERE'S ANOTHER </br>LONGER POST TITLE</h5>
+        </div>
+        <div class="postphoto">
             <img src="http://fillmurray.com/350/300" alt="Bill Murray" />
             <h5>OH COOL A POST!</h5>
-        </li>
-      </ul>
+        </div> -->
+      </div>
     </section>
     <footer>
-      <div class="TIY">
-        <img src="http://38.media.tumblr.com/avatar_735f3d861a7f_64.png" alt="TIY Logo"/>The Iron Yard Copyright 2013, All Rights Reserved
-      </div>
       <div class="footnav">
         <ul>
           <li><a href="#">Nav Item 1</a></li>
@@ -97,6 +121,14 @@
           <li><a href="#">Nav Item 5</a></li>
         </ul>
       </div>
+      <div class="TIY">
+        <a href="https://www.theironyard.com/">
+          <img src="https://www.theironyard.com/etc/designs/theironyard/icons/iron-yard-logo.svg" alt="TIY Logo"/>
+        </a>
+        The Iron Yard Copyright 2013, All Rights Reserved
+      </div>
+
+
     </footer>
   </body>
 </html>

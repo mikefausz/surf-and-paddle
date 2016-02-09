@@ -1,0 +1,96 @@
+header {
+  height: 525px;
+  width: 100%;
+  background-image: url(https://wizardofspa.files.wordpress.com/2013/04/awesomely-ocean-waves.jpg);
+}
+
+.overlay {
+  z-index: 1;
+  background: rgba(20,111,179,0.8);
+  height: 525px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+nav {
+  color: $navy;
+  height: 10%;
+  font-size: 18px;
+  padding-top: 16px;
+  width: 82%;
+  margin-left: 9%;
+  text-align: right;
+  ul {
+    vertical-align: middle;
+    height: 100%;
+    margin: 0;
+    display: inline-block;
+    font-family: $oswald;
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    margin-left: 12px;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      padding: 10px;
+    }
+  }
+  #logo {
+    vertical-align: middle;
+    height: 100%;
+    display: inline;
+    float: left;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+#wavelogo {
+  @include circle(45px);
+  margin-right: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  img {
+    width: 100%;
+  }
+}
+
+#searchbar img {
+  margin-left: -6px;
+  padding-left: 0;
+  height: 16px;
+}
+
+#title {
+  position: relative;
+  top: 24%;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  font-size: 100px;
+  color: #FFF;
+  opacity: 1;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+#subtitle {
+  position: relative;
+  top: 21%;
+  left: -8px;
+  width: 100%;
+  margin: auto;
+  font-size: 15px;
+  color: $navy;
+  opacity: 1;
+  text-align: center;
+}

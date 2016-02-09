@@ -1,0 +1,46 @@
+footer {
+  color: $grey;
+  font-size: 14px;
+  background-color: $navy;
+  width: 100%;
+  height: 100px;
+}
+
+.TIY {
+  padding-top: 1.5%;
+  display: inline-block;
+  margin-left: 10%;
+  img {
+    height: 67px;
+    vertical-align: middle;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      padding-right: 10px;
+    }
+  }
+}
+
+.footnav {
+  float: right;
+  margin-top: 2%;
+  margin-right: 13%;
+  ul {
+    display: inline-block;
+  }
+  li {
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      padding: 0 10px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.footnav li:nth-child(n+2):before {
+  content: "| ";
+}

@@ -1,0 +1,89 @@
+.maincontent {
+  width: 62%;
+  display: inline-block;
+  h1 {
+    line-height: 72px;
+    font-family: $oswald;
+    font-size: 66px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: $navy;
+  }
+  h3 {
+    color: $blue;
+    padding: 4px;
+    margin: 0 0 10px;
+    font-size: 14px;
+    display: inline-block;
+  }
+  h2 {
+    transition: all .2s ease-in-out;
+    color: $blue;
+    border-left: $grey solid 2px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 25px;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.author {
+  display: inline-block;
+  width: 20%;
+}
+
+.photoicon {
+  @include circle(20px);
+  vertical-align: middle;
+  display: inline-block;
+  background-color: $blue;
+  img {
+    @include circle(20px);
+    display: inline-block;
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
+
+.date {
+  display: inline-block;
+  color: $grey;
+  font-size: 14px;
+}
+
+.buttonbar {
+  display: block;
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+  }
+  img {
+    vertical-align: middle;
+    padding-bottom: 3px;
+  }
+}
+
+.button {
+  height: 10px;
+  padding: 6px 15px;
+  display: inline;
+  margin-right: 5px;
+}
+
+#bgrey {
+  background-color: $grey;
+  &:hover {
+    background: $darkgrey;
+  }
+}
+
+#bblue {
+  background-color: $blue;
+  &:hover {
+    background: $navy;
+  }
+}
