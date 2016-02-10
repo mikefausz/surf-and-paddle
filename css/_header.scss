@@ -19,52 +19,56 @@ nav {
   height: 10%;
   font-size: 18px;
   padding-top: 16px;
-  width: 82%;
-  margin-left: 9%;
   text-align: right;
+  margin: auto;
+  width: 78%;
+  display: block;
   ul {
     vertical-align: middle;
     height: 100%;
     margin: 0;
+    padding: 0;
     display: inline-block;
-    font-family: $oswald;
-    list-style-type: none;
   }
   li {
     display: inline-block;
-    margin-left: 12px;
-    transition: all .2s ease-in-out;
-    &:hover {
-      transform: scale(1.1);
-      padding: 10px;
+  }
+
+  #search-bar {
+    font-family: $oswald;
+    list-style-type: none;
+    li {
+      margin-left: 12px;
+      transition: all .2s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+        padding: 10px;
+      }
+    }
+    img {
+      margin-left: -6px;
+      padding-left: 0;
+      height: 16px;
     }
   }
-  #logo {
-    vertical-align: middle;
-    height: 100%;
-    display: inline;
+
+  #logo-bar {
     float: left;
     transition: all .2s ease-in-out;
     &:hover {
       transform: scale(1.1);
     }
   }
-}
-
-#wavelogo {
-  @include circle(45px);
-  margin-right: 12px;
-  display: inline-block;
-  vertical-align: middle;
-  img {
-    width: 100%;
+  #wave-logo {
+    @include circle(45px);
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    img {
+      width: 100%;
+    }
   }
-}
 
-#searchbar img {
-  margin-left: -6px;
-  padding-left: 0;
-  height: 16px;
 }
 
 #title {
@@ -75,6 +79,7 @@ nav {
   margin: auto;
   font-size: 100px;
   color: #FFF;
+  text-shadow: 1px 1px 1px #000;
   opacity: 1;
   text-align: center;
   transition: all .2s ease-in-out;

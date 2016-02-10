@@ -32,15 +32,16 @@
 .author {
   display: inline-block;
   width: 20%;
+  margin-left: 1%;
 }
 
 .photoicon {
-  @include circle(20px);
+  @include circle(22px);
   vertical-align: middle;
   display: inline-block;
   background-color: $blue;
   img {
-    @include circle(20px);
+    @include circle(22px);
     display: inline-block;
     &:hover {
       opacity: .5;
@@ -52,6 +53,10 @@
   display: inline-block;
   color: $grey;
   font-size: 14px;
+  p {
+    display: inline-block;
+    line-height: 0px;
+  }
 }
 
 .buttonbar {

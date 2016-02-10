@@ -35,38 +35,46 @@ nav {
   height: 10%;
   font-size: 18px;
   padding-top: 16px;
-  width: 82%;
-  margin-left: 9%;
-  text-align: right; }
+  text-align: right;
+  margin: auto;
+  width: 78%;
+  display: block; }
 
 nav ul {
   vertical-align: middle;
   height: 100%;
   margin: 0;
-  display: inline-block;
+  padding: 0;
+  display: inline-block; }
+
+nav li {
+  display: inline-block; }
+
+nav #search-bar {
   font-family: "Oswald", sans-serif;
   list-style-type: none; }
 
-nav li {
-  display: inline-block;
+nav #search-bar li {
   margin-left: 12px;
   transition: all .2s ease-in-out; }
 
-nav li:hover {
+nav #search-bar li:hover {
   transform: scale(1.1);
   padding: 10px; }
 
-nav #logo {
-  vertical-align: middle;
-  height: 100%;
-  display: inline;
+nav #search-bar img {
+  margin-left: -6px;
+  padding-left: 0;
+  height: 16px; }
+
+nav #logo-bar {
   float: left;
   transition: all .2s ease-in-out; }
 
-nav #logo:hover {
+nav #logo-bar:hover {
   transform: scale(1.1); }
 
-#wavelogo {
+nav #wave-logo {
   width: 45px;
   height: 45px;
   border-radius: 100%;
@@ -74,13 +82,8 @@ nav #logo:hover {
   display: inline-block;
   vertical-align: middle; }
 
-#wavelogo img {
+nav #wave-logo img {
   width: 100%; }
-
-#searchbar img {
-  margin-left: -6px;
-  padding-left: 0;
-  height: 16px; }
 
 #title {
   position: relative;
@@ -90,6 +93,7 @@ nav #logo:hover {
   margin: auto;
   font-size: 100px;
   color: #FFF;
+  text-shadow: 1px 1px 1px #000;
   opacity: 1;
   text-align: center;
   transition: all .2s ease-in-out; }
@@ -140,19 +144,20 @@ nav #logo:hover {
 
 .author {
   display: inline-block;
-  width: 20%; }
+  width: 20%;
+  margin-left: 1%; }
 
 .photoicon {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   border-radius: 100%;
   vertical-align: middle;
   display: inline-block;
   background-color: #146FB3; }
 
 .photoicon img {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   border-radius: 100%;
   display: inline-block; }
 
@@ -163,6 +168,10 @@ nav #logo:hover {
   display: inline-block;
   color: #D3D3D3;
   font-size: 14px; }
+
+.date p {
+  display: inline-block;
+  line-height: 0px; }
 
 .buttonbar {
   display: block; }
@@ -217,10 +226,10 @@ nav #logo:hover {
   font-size: 14px; }
 
 .sidebar h4 {
-  display: inline-block;
   text-align: right;
   margin-top: 5px;
-  font-size: 14px; }
+  font-size: 14px;
+  text-decoration: underline; }
 
 .sidebar h3 {
   color: #146FB3;
@@ -250,8 +259,11 @@ nav #logo:hover {
 .sidecircle img:hover {
   opacity: .5; }
 
+.ad {
+  margin-top: 20%;
+  width: 100%; }
+
 .sidephoto {
-  margin-top: 50px;
   height: 300px;
   width: 100%;
   background-color: #146FB3;
@@ -288,7 +300,7 @@ nav #logo:hover {
   list-style-type: none;
   padding: 0; }
 
-.photo-row {
+.photo-row1, .photo-row2 {
   display: inline; }
 
 .postphoto {
@@ -397,15 +409,20 @@ footer {
     height: 100px;
     border-radius: 100%; }
   .ad {
-    width: 50%;
+    width: 48%;
+    margin-top: 6%;
     display: inline-block; }
   .sidephoto {
-    width: 300px; }
+    width: 100%;
+    margin-top: 0; }
   .side-text {
     display: inline-block;
-    width: 45%;
-    margin-top: 1%;
-    vertical-align: top; }
+    width: 48%;
+    margin-top: 6.5%;
+    vertical-align: top;
+    margin-left: 2%; }
+  .side-text h3 {
+    margin-top: 0; }
   .popular {
     height: 100%; }
   .popular h1 {
@@ -417,7 +434,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: column; }
-  .photo-row {
+  .photo-row1, .photo-row2 {
     width: 100%;
     height: 48%;
     margin: 0 auto;
@@ -431,14 +448,150 @@ footer {
     height: 100%; }
   footer {
     margin-top: 2%; }
-  .TIY {
+  footer .footnav {
+    margin-right: 7%; }
+  footer .TIY {
     margin-left: 4%; } }
 
+@media only screen and (max-width: 900px) {
+  header {
+    height: 335px; }
+  .overlay {
+    height: 335px; }
+  #title {
+    font-size: 68px;
+    top: 22%; }
+  #subtitle {
+    font-size: 21px;
+    top: 19%; }
+  .author {
+    width: 18%; }
+  footer {
+    margin-top: 6.5%;
+    height: 200px;
+    padding-top: 2%;
+    text-align: center;
+    font-size: 15px; }
+  footer .footnav {
+    float: none;
+    margin: auto;
+    margin-top: 2%; }
+  footer .TIY {
+    padding: 0; }
+  footer .TIY img {
+    display: block;
+    margin: auto;
+    height: 70px; } }
+
 @media only screen and (max-width: 768px) {
+  header {
+    height: 215px; }
+  .overlay {
+    height: 215px; }
+  nav {
+    width: 85%;
+    height: 50%;
+    text-align: center; }
+  nav #search-bar {
+    display: block;
+    height: 35%; }
+  nav #logo-bar {
+    float: none;
+    display: block;
+    height: 50%; }
+  nav #wave-logo {
+    width: 55px; }
+  nav #logo-name {
+    display: none; }
+  #title {
+    font-size: 46px;
+    top: -6%;
+    left: 0; }
+  #subtitle {
+    top: -9%;
+    left: -1px; }
+  .content {
+    width: 87%;
+    margin-top: 12%; }
+  .maincontent h1 {
+    line-height: 82px;
+    font-size: 69px; }
+  .maincontent .author, .maincontent .date p {
+    display: none; }
+  .sidebar {
+    margin-top: 12.5%; }
+  .sidebar h1 {
+    font-size: 26px; }
+  .sidebar h2 {
+    font-size: 20px; }
   .sidebar h3, .sidebar p {
     display: none; }
   .ad {
-    margin-top: 5%;
+    margin-top: 12.5%;
     width: 100%; }
   .sidephoto {
-    margin: auto; } }
+    width: 100%;
+    height: 350px;
+    margin: auto; }
+  .popular h1 {
+    margin-top: 12.5%;
+    font-size: 50px;
+    line-height: 35px; }
+  .photogrid {
+    height: 1000px;
+    width: 87%; }
+  .photogrid .photo-row1 {
+    flex-direction: column;
+    height: 67%; }
+  .photogrid .photo-row2 {
+    height: 32%; }
+  .photogrid .postphoto {
+    height: 315px;
+    width: 100%; }
+  .photogrid h5 {
+    font-size: 36px;
+    top: 37%;
+    left: 3%;
+    color: white; }
+  .photogrid #last {
+    display: none; } }
+
+@media only screen and (max-width: 600px) {
+  .content {
+    margin-bottom: 11.5%; }
+  .sidecircle {
+    width: 135px;
+    height: 135px;
+    border-radius: 100%; }
+  .sidecircle img {
+    width: 135px;
+    height: 135px;
+    border-radius: 100%; }
+  .buttonbar img {
+    width: 55px;
+    margin-right: 2%; }
+  .buttonbar .button {
+    display: none; }
+  .sidebar {
+    margin-top: 26.5%; }
+  .ad {
+    margin-top: 24%; }
+  .popular h1 {
+    margin-top: 20%; }
+  footer {
+    margin-top: 22.5%;
+    height: 335px;
+    padding-top: 6%;
+    text-align: center;
+    font-size: 20px; }
+  footer .TIY img {
+    display: block;
+    margin: auto;
+    height: 110px; } }
+
+@media only screen and (max-width: 450px) {
+  #title {
+    font-size: 33px;
+    top: 2%; }
+  #subtitle {
+    display: none; } }
