@@ -51,20 +51,24 @@
     }
   }
 }
+
 .ad {
   margin-top: 20%;
   width: 100%;
 }
+
 .sidephoto {
   height: 300px;
   width: 100%;
-  background-color: $blue;
-  overflow: hidden;
-  img {
-      opacity: .5;
-      transition: all .25s ease-in-out;
-      &:hover {
-        opacity: 1;
-      }
+  background-image: url(http://fillmurray.com/350/350);
+ }
+
+ .blue-tint {
+   height: 100%;
+   width: 100%;
+   background: rgba(20,111,179,0.8);
+   transition: all .5s ease-in-out;
+   &:hover {
+      opacity: 0;
    }
  }

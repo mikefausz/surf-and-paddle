@@ -23,6 +23,7 @@
     padding: 0;
   }
 }
+
 .photo-row1, .photo-row2 {
   display: inline;
 }
@@ -35,19 +36,6 @@
   position: relative;
   overflow: hidden;
   background-image: url("http://fillmurray.com/350/350");
-  // img {
-  //   overflow: hidden;
-  //   height: 300px;
-  //   width: 100%;
-  //   opacity: .2;
-  //   transition: all .5s ease-in-out;
-  // }
-  .blue-tint {
-    height: 100%;
-    width: 100%;
-    background: rgba(20,111,179,0.8);
-    transition: all .5s ease-in-out;
-  }
   div {
     transition: all .5s ease-in-out;
   }
@@ -63,9 +51,6 @@
     transition: all .5s ease-in-out;
   }
   &:hover {
-    .blue-tint {
-      opacity: 0;
-    }
     h5 {
       color: #FFF;
     }

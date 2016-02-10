@@ -266,15 +266,16 @@ nav #wave-logo img {
 .sidephoto {
   height: 300px;
   width: 100%;
-  background-color: #146FB3;
-  overflow: hidden; }
+  background-image: url(http://fillmurray.com/350/350); }
 
-.sidephoto img {
-  opacity: .5;
-  transition: all .25s ease-in-out; }
+.blue-tint {
+  height: 100%;
+  width: 100%;
+  background: rgba(20, 111, 179, 0.8);
+  transition: all .5s ease-in-out; }
 
-.sidephoto img:hover {
-  opacity: 1; }
+.blue-tint:hover {
+  opacity: 0; }
 
 .popular {
   display: block;
@@ -312,12 +313,6 @@ nav #wave-logo img {
   overflow: hidden;
   background-image: url("http://fillmurray.com/350/350"); }
 
-.postphoto .blue-tint {
-  height: 100%;
-  width: 100%;
-  background: rgba(20, 111, 179, 0.8);
-  transition: all .5s ease-in-out; }
-
 .postphoto div {
   transition: all .5s ease-in-out; }
 
@@ -331,9 +326,6 @@ nav #wave-logo img {
   padding: 10px;
   width: 300px;
   transition: all .5s ease-in-out; }
-
-.postphoto:hover .blue-tint {
-  opacity: 0; }
 
 .postphoto:hover h5 {
   color: #FFF; }
@@ -532,7 +524,8 @@ footer {
   .sidephoto {
     width: 100%;
     height: 350px;
-    margin: auto; }
+    margin: auto;
+    background-image: url(http://fillmurray.com/350/400); }
   .popular h1 {
     margin-top: 12.5%;
     font-size: 50px;
