@@ -27,11 +27,14 @@
       transform: scale(1.1);
     }
   }
+  p a {
+    text-decoration: underline;
+  }
 }
 
 .author {
   display: inline-block;
-  width: 20%;
+  width: 22%;
   margin-left: 1%;
 }
 
@@ -57,12 +60,14 @@
     display: inline-block;
     line-height: 0px;
   }
+  a {
+    text-decoration: underline;
+  }
 }
 
 .buttonbar {
   display: block;
   a {
-    text-decoration: none;
     color: #fff;
     font-size: 13px;
   }

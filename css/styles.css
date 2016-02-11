@@ -3,11 +3,15 @@ body {
   padding: 0;
   font-family: 'Noto sans',sans-serif; }
 
-a {
-  color: #D3D3D3; }
+body h1 {
+  font-weight: 400; }
 
-p {
+body p {
   line-height: 24px; }
+
+body a {
+  color: #D3D3D3;
+  text-decoration: none; }
 
 .content {
   display: block;
@@ -67,6 +71,9 @@ nav #search-bar img {
   padding-left: 0;
   height: 16px; }
 
+nav #search-bar a {
+  color: #04314F; }
+
 nav #logo-bar {
   float: left;
   transition: all .2s ease-in-out; }
@@ -92,7 +99,6 @@ nav #wave-logo img {
   width: 100%;
   margin: auto;
   font-size: 100px;
-  color: #FFF;
   text-shadow: 1px 1px 1px #000;
   opacity: 1;
   text-align: center;
@@ -100,6 +106,9 @@ nav #wave-logo img {
 
 #title:hover {
   transform: scale(1.1); }
+
+#title a {
+  color: #FFF; }
 
 #subtitle {
   position: relative;
@@ -142,9 +151,12 @@ nav #wave-logo img {
 .maincontent h2:hover {
   transform: scale(1.1); }
 
+.maincontent p a {
+  text-decoration: underline; }
+
 .author {
   display: inline-block;
-  width: 20%;
+  width: 22%;
   margin-left: 1%; }
 
 .photoicon {
@@ -173,11 +185,13 @@ nav #wave-logo img {
   display: inline-block;
   line-height: 0px; }
 
+.date a {
+  text-decoration: underline; }
+
 .buttonbar {
   display: block; }
 
 .buttonbar a {
-  text-decoration: none;
   color: #fff;
   font-size: 13px; }
 
@@ -244,6 +258,9 @@ nav #wave-logo img {
   font-size: 14px;
   line-height: 24px; }
 
+.sidebar p a {
+  text-decoration: underline; }
+
 .sidecircle {
   width: 80px;
   height: 80px;
@@ -282,6 +299,9 @@ nav #wave-logo img {
   text-align: center;
   height: 140px;
   border-top: 1px solid #D3D3D3; }
+
+.popular a {
+  text-decoration: none; }
 
 .popular h1 {
   transition: all .2s ease-in-out;
@@ -338,18 +358,25 @@ footer {
   height: 100px; }
 
 .TIY {
-  padding-top: 1.5%;
+  padding-top: 1%;
   display: inline-block;
   margin-left: 10%; }
 
 .TIY img {
   height: 67px;
   vertical-align: middle;
+  margin-bottom: 7px;
   transition: all .2s ease-in-out; }
 
 .TIY img:hover {
   transform: scale(1.1);
   padding-right: 10px; }
+
+.TIY p {
+  display: inline-block; }
+
+.TIY p:first-of-type:after {
+  content: ", "; }
 
 .footnav {
   float: right;
@@ -371,7 +398,7 @@ footer {
   text-decoration: none; }
 
 .footnav li:nth-child(n+2):before {
-  content: "| "; }
+  content: " | "; }
 
 @media only screen and (max-width: 1024px) {
   header {
@@ -580,7 +607,17 @@ footer {
   footer .TIY img {
     display: block;
     margin: auto;
-    height: 110px; } }
+    height: 110px; }
+  footer .TIY p {
+    display: block; }
+  footer .TIY p:first-of-type:after {
+    content: ""; } }
+
+@media only screen and (max-width: 496px) {
+  .popular h1 {
+    font-size: 38px; }
+  .footnav li:last-of-type:before {
+    content: ""; } }
 
 @media only screen and (max-width: 450px) {
   #title {
