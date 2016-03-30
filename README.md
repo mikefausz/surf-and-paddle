@@ -37,3 +37,10 @@ Goal 2.1: Add responsive styles to your web page.
 Epic Mode
 Challenge #3.1: Ensure your layouts are pixel-perfect with the original images. You can use PerfectPixel for Chrome to overlay your web page with the mockup images. Make sure any transitions comply with this strict styling as well! 
 Goal #3.1: Check for pixel-perfection and adjust your web page as necessary.
+
+----------------------------------
+
+Week 2, Day 2
+
+Refactor Surf & Paddle to use SASS
+Refactor the previous Surf & Paddle Assignment to use SASS.
