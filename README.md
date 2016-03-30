@@ -3,7 +3,7 @@ An HTML website built from a wireframe
 
 ----------------------------------
 
-This project was created to fulfill an assignment for The Iron Yard Charleston's Front-End Engineering course. The original ssignment text is below:
+This project was created to fulfill an assignment for The Iron Yard Charleston's Front-End Engineering course. The original assignment text is below:
 
 ----------------------------------
 
