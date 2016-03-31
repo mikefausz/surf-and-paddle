@@ -3,7 +3,7 @@ An HTML website built from a wireframe
 
 >This project was created to fulfill an assignment for The Iron Yard Charleston's Front-End Engineering course. The original assignment text is below:
 
-Week 1, Day 3
+*Week 1, Day 3*
 
 ##HTML - Surf & Paddle
 Let's create an active web page from an image mockup.
@@ -39,7 +39,7 @@ As a web developer, you'll sometimes be tasked with creating an HTML page from a
 
 ----------------------------------
 
-Week 2, Day 2
+*Week 2, Day 2*
 
-Refactor Surf & Paddle to use SASS
+##Refactor Surf & Paddle to use SASS
 Refactor the previous Surf & Paddle Assignment to use SASS.
