@@ -1,0 +1,147 @@
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 450px;
+  }
+
+  .overlay {
+    height: 450px;
+  }
+
+  #title {
+    font-size: 76px;
+  }
+
+  #subtitle {
+    font-size: 20px;
+    top: 22%;
+  }
+
+  .maincontent {
+    width: 100%;
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 7.5%;
+    vertical-align: top;
+    display: block;
+  }
+
+  .sidecircle {
+    @include circle(100px);
+    img {
+      @include circle(100px);
+    }
+  }
+
+  .ad {
+    width: 48%;
+    margin-top: 6%;
+    display: inline-block;
+  }
+
+  .sidephoto {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .side-text {
+    display: inline-block;
+    width: 48%;
+    margin-top: 6.5%;
+    vertical-align: top;
+    margin-left: 2%;
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  .popular {
+    height: 100%;
+    h1 {
+      margin-top: 10%;
+    }
+  }
+
+  .photogrid {
+    height: 600px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .photo-row1, .photo-row2 {
+    width: 100%;
+    height: 48%;
+    margin: 0 auto;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .postphoto {
+    float: none;
+    margin: auto;
+    width: 48%;
+    height: 100%;
+  }
+
+  footer {
+    margin-top: 2%;
+    .footnav {
+      margin-right: 7%;
+    }
+    .TIY {
+      margin-left: 4%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    height: 335px;
+  }
+
+  .overlay {
+    height: 335px;
+  }
+
+  #title {
+    font-size: 68px;
+    top: 22%;
+  }
+
+  #subtitle {
+    font-size: 21px;
+    top: 19%;
+  }
+
+  .author {
+    width: 18%;
+  }
+
+  footer {
+    margin-top: 6.5%;
+    height: 200px;
+    padding-top: 2%;
+    text-align: center;
+    font-size: 15px;
+    .footnav {
+      float: none;
+      margin: auto;
+      margin-top: 2%;
+    }
+    .TIY {
+      padding: 0;
+      img {
+        display: block;
+        margin: auto;
+        height: 70px;
+      }
+    }
+  }
+}

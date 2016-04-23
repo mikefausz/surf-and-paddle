@@ -1,0 +1,61 @@
+.popular {
+  display: block;
+  text-align: center;
+  height: 140px;
+  border-top: 1px solid $grey;
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    transition: all .2s ease-in-out;
+    line-height: 32px;
+    font-family: $oswald;
+    font-size: 66px;
+    color: $navy;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.photogrid {
+  height: 300px;
+  width: 100%;
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+.photo-row1, .photo-row2 {
+  display: inline;
+}
+
+.postphoto {
+  float: left;
+  background-color: $blue;
+  width: 25%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("http://fillmurray.com/350/350");
+  div {
+    transition: all .5s ease-in-out;
+  }
+  h5 {
+    font-size: 27px;
+    font-family: $oswald;
+    color: $navy;
+    position: absolute;
+    left: 0;
+    top: 52%;
+    padding: 10px;
+    width: 300px;
+    transition: all .5s ease-in-out;
+  }
+  &:hover {
+    h5 {
+      color: #FFF;
+    }
+  }
+}
